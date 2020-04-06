@@ -16,7 +16,7 @@ jobs:
       testSelector: 'testAssemblies'
       testAssemblyVer2: '**\\*TimeBasedSlicingProject*.dll'
       distributionBatchType: 'basedOnExecutionTime'
-      searchFolder: '$(System.DefaultWorkingDirectory)\CodedUITestProject3\CodedUITestProject3\bin\Debug\'
+      searchFolder: '$(System.DefaultWorkingDirectory)\TimeBasedSlicingProject\bin\Debug\'
       batchingBasedOnAgentsOption: 'customTimeBatchSize'
       customRunTimePerBatchValue: 65
       vsTestVersion: 'toolsInstaller'
