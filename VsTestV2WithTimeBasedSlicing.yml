@@ -14,7 +14,9 @@ jobs:
   - task: VSTest@2
     inputs:
       testSelector: 'testAssemblies'
-      testAssemblyVer2: '**\\*TimeBasedSlicingProject*.dll'
+      testAssemblyVer2: |
+        **\\*TimeBasedSlicingProject*.dll
+        !**\obj\
       distributionBatchType: 'basedOnExecutionTime'
       searchFolder: '$(System.DefaultWorkingDirectory)\bin\Debug\'
       batchingBasedOnAgentsOption: 'customTimeBatchSize'
